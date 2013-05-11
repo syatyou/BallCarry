@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">BallCarry</string>
-    <string name="goal">Goal</string>
-    <string name="start">start</string>
-    <string name="goaled">ゴールしました！</string>
-    <string name="failed">落っこちました！</string>
-    <string name="is_continue">続けますか？</string>
+	<string name="app_name">BallCarry</string>
+	<string name="goal">Goal</string>
+	<string name="start">start</string>
+	<string name="goaled">ゴールしました！</string>
+	<string name="failed">落っこちました！</string>
+	<string name="is_continue">続けますか？</string>
 </resources>
