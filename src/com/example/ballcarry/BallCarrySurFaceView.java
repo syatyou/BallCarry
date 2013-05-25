@@ -150,6 +150,11 @@ mHeight, Path.Direction.CW);
 		for (int i = 0; i < mHoleY.length; i++) {
 			mHoleY[i] = GOAL_HEIGHT + heightPart / 2 + heightPart * i;
 		}
+		for (int i = 0; i < mHoleX.length; i++) {
+			
+			mRand[i]= (int) (Math.random()*4 + 1);
+			mHoleX[i] = OUT_WIDTH + 100 * mRand[i];
+		}
 		for (int i = 0; i < mHoleZone.length; i++) {
 			mHoleZone[i] = new Path();
 			mHoleZone[i].addCircle(mHoleX[i], mHoleY[i], HOLE_RADIUS, Path.Direction.CW);
@@ -165,7 +170,7 @@ mHeight, Path.Direction.CW);
 		
 		int oldCircleY = mCircleY;
 		mCircleX -= BallCarryActivity.accel_x*2;
-		mCircleY -= BallCarryActivity.accel_y*2;
+		mCircleY += BallCarryActivity.accel_y*2;
 		
 		if (mCircleY > mHeight) {
 			mCircleY = (int) (oldCircleY - mBallSize) ;
